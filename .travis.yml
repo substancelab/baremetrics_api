@@ -1,5 +1,13 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.3.1
+- 2.3.1
 before_install: gem install bundler -v 1.13.6
+deploy:
+  provider: rubygems
+  api_key:
+    secure: OhpNFIApd+B+C+NWU4RhzA2Yd8vGUho+omerwUJIlQbuNYV2jUiZZaADBWFo709yv/elZRHzWNSUUWmlPt9NnZ5maBqRNQOd1gvFF+SXxCJmT5dhh3IDK8GENVza35Xnqpjuxn1/1+v48jWQU9EyRnpb8mP9VbgJJn3+DHgmlTY1xSmLXy6LtT1T9uFMEqowC9iiobd8sIAT9i+5leGiaJ7Igonb9tzjiTv3kNBUATJqSFW42sQa1iB6CRQd0zMNIws3QtBKILbGnhJ22K902rZ1bpMUZgCo+Fk+FmmphCLok2yyk5pfrxHfSJeBeRBjWuZqW9CgKHVAdJB4Ewp5GdN250IsMU8ypOxgr2cr8TqxlJPpfhzccLnjx51ol8kpNdSFJ3IFW7FScOtBgVbItzHADm1v092ko+hbDDBTKKPoP7+s4o9reWL6xv60/SYcMzL05DA7nj5NcGiYoPvt+z9eUesMVIHHD9OYBgkPLwD21BOk+W/zTaGYjiPeruuHU4OUg+08weCZRwrWWxDj023q0msE/P1wcdc0IG3NXHAGX0lJA3sGsVvWr9LjF5AidJm+hkJXVS4ppLxOKs4N6WqF9VwepR/fgTRVhCIFqV4U58RHiXWPeJZrah2zSJZvaFUKiuTfeIdqHn12kguzgfw/Ag7GfTwFPNcA6pIpdYQ=
+  gem: baremetrics_api
+  on:
+    tags: true
+    repo: rewindio/baremetrics_api

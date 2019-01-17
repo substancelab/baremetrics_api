@@ -1,4 +1,5 @@
 # Baremetrics API
+[![Build Status](https://travis-ci.org/rewindio/baremetrics_api.svg?branch=master)](https://travis-ci.org/rewindio/baremetrics_api)
 
 This is a Ruby Gem for the Baremetrics API developed by Rewind.
 
@@ -81,7 +82,7 @@ You should rescue this exception and retry after an hour when the rate limit is 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/rewindit/baremetrics.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rewindio/baremetrics.
 
 
 ## License
